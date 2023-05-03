@@ -15,11 +15,29 @@ addItemButton.style.color = "green";
 addItemButton.style.fontWeight = "bold";
 
 // Get the third list item and set its background color to green
-const thirdItem = document.querySelector('#items li:nth-child(3)');
-thirdItem.style.backgroundColor = 'green';
+/*const thirdItem = document.querySelector('#items li:nth-child(3)');
+thirdItem.style.backgroundColor = 'green';*/
 
 // Get all the list items and set their font weight to bold
 const allItems = document.querySelectorAll('#items li');
 allItems.forEach(item => {
   item.style.fontWeight = 'bold';
+});
+
+//  Get the second list item and set its background color to green
+/*const secondItem = document.querySelector('#items li:nth-child(2)');
+secondItem.style.backgroundColor = 'green';*/
+
+// make the third li invisible
+/*const thirdItem = document.querySelector('#items li:nth-child(3)');
+thirdItem.style.display = 'none';*/
+
+//To change the font color of the second item in the item list to green
+const secondItem = document.querySelectorAll('#items li')[1];
+secondItem.style.color = 'green';
+
+//To select all the odd elements in the list and change their background color to green:
+const oddItems = document.querySelectorAll('#items li:nth-of-type(odd)');
+oddItems.forEach(item => {
+  item.style.backgroundColor = 'green';
 });
